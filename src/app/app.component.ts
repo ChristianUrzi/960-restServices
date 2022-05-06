@@ -14,7 +14,7 @@ export class AppComponent {
   public mostra(){
     this.richiesta.get("https://api.nationalize.io/?name="+this.nome).subscribe(
       datinaz => {
-        this.naz= datinaz["country"][1]["country_id"]
+        this.naz= datinaz["country"][0]["country_id"]
         console.log(datinaz)
       },
       errore => {
