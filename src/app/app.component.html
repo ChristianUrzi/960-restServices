@@ -1,9 +1,9 @@
-<div>
-  <input type="text" [(ngModel)]="nome">
-<button (click)="mostra()">Mostra Nazionalità</button>
+<div> <!--div contiene tutto il resto-->
+  <input type="text" [(ngModel)]="nome"><!--ngModel assegna alla variabile nome il valore della textbox, nome in questo caso-->
+<button (click)="mostra()">Mostra Nazionalità</button><!--evento click esegue il metodo mostra-->
 <p class="ColoreT">
-  Nome: {{nome}}
+  Nome: {{nome}}<!--stampa le variabili in tempo reale, se cambio si aggiorna-->
   <br>
-  Nazionalità: {{naz}}
+  Nazionalità: {{naz}}<!--stampa le variabili in tempo reale, se cambio si aggiorna-->
 </p>
 </div>
